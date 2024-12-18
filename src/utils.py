@@ -32,7 +32,9 @@ def evaluate_models(X_train,y_train,X_test,y_test, models, params):
             gs.fit(X_train, y_train)
 
             model.set_params(**gs.best_params_)
+            # print(gs.best_params_)
             model.fit(X_train, y_train)
+            # print(model.__class__.__name__)
 
             # model.fit(X_train, y_train)
 
@@ -47,5 +49,12 @@ def evaluate_models(X_train,y_train,X_test,y_test, models, params):
             report[list(models.keys())[i]] = test_model_score
 
         return report
+    except Exception as e:
+        raise CustomException(e, sys)
+    
+def load_object(file_path):
+    try:
+        with open(file_path, 'rb') as file_obj:
+            return dill.load(file_obj)
     except Exception as e:
         raise CustomException(e, sys)

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/shiva/Desktop/mlproject/mlruns/130438291522057221/edf0f4b6af38482b98cc4e58899d6847/artifacts
+end_time: 1734455535429
+entry_point_name: ''
+experiment_id: '130438291522057221'
+lifecycle_stage: active
+run_id: edf0f4b6af38482b98cc4e58899d6847
+run_name: Linear Regression
+run_uuid: edf0f4b6af38482b98cc4e58899d6847
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734455529618
+status: 3
+tags: []
+user_id: shiva
